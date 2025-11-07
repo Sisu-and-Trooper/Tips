@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Jar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #ddd;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .tip-button {
+            display: block;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tip-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .tip-button i {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        /* App-specific colors */
+        .venmo { background-color: #0074DE; color: white; }
+        .paypal { background-color: #003087; color: white; }
+        .cashapp { background-color: #00D632; color: white; }
+        .zelle { background-color: #6D1ED4; color: white; }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Leia Johnson</h1>
+        <p>Thanks for the support! Please choose your preferred way to tip.</p>
+
+        <div class="button-container">
+            <a href="https://venmo.com/u/LeiaCya39" target="_blank" class="tip-button venmo">
+                <i class="fa-solid fa-v"></i> Venmo
+            </a>
+
+            <a href="https://paypal.me/LeiaCJohnson" target="_blank" class="tip-button paypal">
+                <i class="fab fa-paypal"></i> PayPal
+            </a>
+
+            <a href="https://cash.app/$LeiaCya" target="_blank" class="tip-button cashapp">
+                <i class="fa-solid fa-dollar-sign"></i> Cash App
+            </a>
+            
+            </div>
+
+        <div class="footer">
+            Tap a button to open the app
+        </div>
+    </div>
+
+</body>
+</html>
